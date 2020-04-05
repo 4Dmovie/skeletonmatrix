@@ -1,0 +1,24 @@
+AUTHOR: Yiyou Chen
+EMAIL: gerry99@ucla.edu
+DATE: 04/05/2020
+
+Introduction:
+This is a python program that on input an original adjacency matrix, will output the skeleton matrix of it.
+
+The procedure to find skeleton matrix is as follows:
+adjacency matrix (A) -> reachable matrix (M):
+M=(A+I)^k s.t. (A+I)^k = (A+I)^(k+1)
+reachable matrix (M) -> skeleton matrix (T):
+1. removing equivalent nodes
+2. calculating all independent parts
+3. ordering nodes in each independent part
+
+Input Format:
+An integer N: number of row and columns of the adjacency matrix
+N*N integers: representing the adjacency matrix
+
+Output Format:
+K (<=N) integers: representing the rows and columns in the original adjacency matrix each row and column represents in the skeleton matrix
+K*K integers: representing the skeleton matrix.
+
+If you notice any bugs or errors, please contact me via email. Thank you and enjoy!
